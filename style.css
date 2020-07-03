@@ -102,20 +102,61 @@ h3
 	color: white;
 }
 
-.footer a
+a
 {
     color: #3D9970;
 }
 
-.back
+.buttons_container
 {
+    text-align: center;
+}
+
+.button
+{
+    display: inline-block;
 	text-align: center;
 	margin-bottom: 100px;
 }
 
-.back a
+.button a
 {
 	color: white;
 	background-color: black;
 	padding: 5px;
+}
+
+.device_container
+{
+    text-align: center;
+}
+
+.device
+{
+    display: inline-block;
+    background-color: #d2d2d2;
+    text-align: center;
+    width: 22%;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: top;
+}
+
+.plus p
+{
+    background-color: #3D9970;
+    color: #ffffff;
+    padding: 5px;
+}
+
+.minus p
+{
+    background-color: #990F02;
+    color: #ffffff;
+    padding: 5px;
+}
+
+.device a
+{
+    color: #ffffff;
 }

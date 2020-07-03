@@ -3,7 +3,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Android Privacy Guide</title>
+		<title>Android Privacy Guide | Finding a device</title>
 		<meta name="description" content="A simple, concise, and easy to implement guide to privacy on Android">
 		<link rel="stylesheet" href="./style.css">
 		<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,700" rel="stylesheet"> 
@@ -11,7 +11,7 @@
 	
 	<body>
 		<div class="banner">
-			<h1>Considerations</h1>
+			<h1>Finding a device</h1>
 		</div>
 		
 		<div class="content">
@@ -22,12 +22,76 @@
 			<p>It is important to check the <a href="https://forum.xda-developers.com/">XDF Developer Forums</a> to ensure that a device has a stable, active ROM community with official releases. While other privacy-focused roms are available, checking to see if the device has a maintained official version of LineageOS is a good indicator.
 		
 			<h2>Hardware kill switches</h2>
-			<p>Having kill switches built in is extremely rare, however allow the user to know with confidence their devices cameras, microphones, and networking features are not being used. By physically cutting off these features until you need to use them, you reduce the risk of applications using them in the background. Currently the only Android device with this feature built in I know of is the Fairphone 3.
-		</div>
-		
-		<div class="back">
-			<h4><a href="./index.html">Back</a></h4>
-		</div>
+			<p>Having kill switches built in is extremely rare, however allow the user to know with confidence their devices cameras, microphones, and networking features are not being used. By physically cutting off these features until you need to use them, you reduce the risk of applications using them in the background. Currently there are no commercially available Android devices with killswitches available, however some phones allow for hardware to be replaced to be potentially more privacy respecting.
+
+            <h2>Examples</h2>
+            <p>The following are some devices that meet the majority of the above requirements. Keep in mind that outside of privacy specialised devices (see <a href="./considerations.html">considerations</a>) it is extremely uncommon to find phones with hardware kill switches and therefore this will be ignored here until one is found. Additionally, almost all manufacturers will require you to request an unlock key via their website or by making an account. While most manufacturers only require you to make an account with minimal personal information, some processes are intentionaly exploitative to gather as much personal information as possible or require (sometimes really awfully made) first party tools. It is reccomended to do your own research in addition, as this list may not always be up to date.</p>
+
+            <div class="device_container">
+                <div class="device">
+                    <h4>Fairphone 3</h4>
+                    <p>My personal reccomendation. Roughly equivelant hardware to the Moto G7 however has the advantage of being almost entirely modular and having a simpler bootloader unlocking process. Id reccomend using the /e/ ROM (based on LineageOS) that can be installed by deafult if bought through /e/OS's <a href="https://esolutions.shop/shop/e-os-fairphone-3/">website</a>.</p>
+                    <div class="plus">
+                        <p>Priavcy respecting default ROM available (/e/OS)</p>
+                        <p>Modular, replaceable hardware</p>
+                        <p><a href="https://twrp.me/fairphone/fairphone3.html">Official TWRP support</a></p>
+                        <p>Straightforward bootloader unlock process</p>
+                        <p>Bootloader does not require an account/first party software</p>
+                    </div>
+                    <div class="minus">
+                        <p>Expensive given the default hardware</p>
+                    </div>
+                </div>
+
+                <div class="device">
+                    <h4>Moto G7/G7 Plus</h4>
+                    <div class="plus">
+                        <p><a href="https://wiki.lineageos.org/devices/river/">Official LineageOS support</a></p>
+                        <p><a href="https://twrp.me/motorola/motorolamotog7plus.html">Official TWRP support</a></p>
+                        <p>Straightforward bootloader unlock process</p>
+                        <p>Relatively cheap</p>
+                    </div>
+
+                    <div class="minus">
+                        <p>Hardware not modular/replaceable</p>
+                        <p>Bootloader unlock requires account</p>
+                        <p>Bloated default ROM</p>
+                    </div>
+                </div>
+
+                <div class="device">
+                    <h4>Motorola Moto G7/G7 Plus</h4>
+                    <div class="plus">
+                        <p><a href="https://wiki.lineageos.org/devices/river/">Official LineageOS support</a></p>
+                        <p><a href="https://twrp.me/motorola/motorolamotog7plus.html">Official TWRP support</a></p>
+                        <p>Straightforward bootloader unlock process</p>
+                    </div>
+                </div>
+
+                <div class="device">
+                    <h4>Motorola Moto G7/G7 Plus</h4>
+                    <div class="plus">
+                        <p><a href="https://wiki.lineageos.org/devices/river/">Official LineageOS support</a></p>
+                        <p><a href="https://twrp.me/motorola/motorolamotog7plus.html">Official TWRP support</a></p>
+                        <p>Straightforward bootloader unlock process</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+	    
+        <div class="buttons_container">
+            <div class="button">
+                <h4><a href="./considerations.html"><</a></h4>
+            </div>
+
+            <div class="button">
+                <h4><a href="./index.html">Back</a></h4>
+            </div>
+
+            <div class="button">
+                <h4><a href="./roms.html">></a></h4>
+            </div>
+        </div>
 		
         <div class="footer">
             <p>Joe Standring | 2020</p>
