@@ -1,0 +1,121 @@
+* 
+{
+    font-family: 'Libre Franklin';
+    color: #222;
+}
+
+body 
+{
+    margin: 0;
+    padding: 25px;
+    background-color: #f2f2f2;
+}
+
+.banner
+{
+	margin: auto;
+	width: 500px;
+	background-color: #d2d2d2;
+	text-align: center;
+	border-radius: 25px;
+	padding: 5px;
+}
+
+h1
+{
+	font-size: 50px;
+}
+
+.donate
+{
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+}
+
+.imglink
+{
+    margin: 40px;
+    text-align: center;
+}
+
+.link
+{
+    margin: 11px;
+    position: relative;
+    transition: .5s ease;
+    display: inline-block;
+    box-shadow: 5px 5px;
+}
+
+.image
+{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-size: 4px;
+    border-style: solid;
+    border-color: #222;
+}
+
+.overlay
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 30%;
+    width: 100%;
+    background-color: black;
+}
+
+.link:hover
+{
+    transform: scale(1.1);
+}
+
+h3
+{
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 1;
+}
+
+.footer
+{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #222;
+    color: #f2f2f2;
+    text-align: center;
+}
+
+.footer p
+{
+	color: white;
+}
+
+.footer a
+{
+    color: #3D9970;
+}
+
+.back
+{
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.back a
+{
+	color: white;
+	background-color: black;
+	padding: 5px;
+}
