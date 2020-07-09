@@ -26,13 +26,6 @@ h1
 	font-size: 50px;
 }
 
-.donate
-{
-	position: absolute;
-	bottom: 15px;
-	right: 15px;
-}
-
 .imglink
 {
     margin: 40px;
@@ -136,7 +129,7 @@ a
     display: inline-block;
     background-color: #d2d2d2;
     text-align: center;
-    width: 22%;
+    width: 30%;
     padding-left: 10px;
     padding-right: 10px;
     vertical-align: top;
@@ -156,7 +149,41 @@ a
     padding: 5px;
 }
 
-.device a
+.plus a
 {
     color: #ffffff;
+}
+
+.minus a
+{
+    color: #ffffff;
+}
+
+.alert
+{
+    background-color: #f1fa8c;
+    padding: 10px;
+}
+
+.alert img
+{
+    display: inline-block;
+    width: 5%;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+.alert p
+{
+    display: inline-block;
+    width: 93%;
+    vertical-align: middle;
+}
+
+.donate
+{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 50px;
 }
