@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Android Privacy Guide | ROMs</title>
+		<meta name="description" content="A simple, concise, and easy to implement guide to privacy on Android">
+		<link rel="stylesheet" href="./style.css">
+		<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,700" rel="stylesheet"> 
+	</head>
+	
+	<body>
+		<div class="banner">
+			<h1>ROMs</h1>
+		</div>
+		
+		<div class="content">
+            <p>This section will cover what to look for when choosing a custom ROM for your device as well as a few reccomendations.</p>
+            <h2>Development status</h2>
+            <p>When finding a ROM it is almost always better to go with an "official" release as these are more often than not more reliable, up to date, and stable than unofficial releases. Additionally, you should check that a ROM is updated regularly so that it receives regular security updates and fixes.</p>
+            <h2>Privacy policy</h2>
+            <p>It is important to carefully consider the privacy policy of a ROM you are considering using. These may cover what outside connections the ROM will make (such as to Google), what information is shared, and how included software handles user data. If you are using a ROM without a clear privacy policy/statement, you can't be sure that your data is not being misused.</p>
+            <h2>Google services</h2>
+            <p>By default, Android includes Google Play Services. Googple Play services is a collection of APIs that allow for apps to interface with various Google services (for example Google Maps, Google Sign In, and Google Cloud Messaging). This is an obvious privacy concern as information, such as the devices location, are collected and transmitted to Google via the APIs included in Google Play Services. It is highly reccomended to use an <a href="./google-services-and-alternatives">alternative</a> to replace the services provided by Google, as missing them can result in many apps breaking.</p>
+            <h2>Open source</h2>
+            <p>The only way to truly know if any software respects your privacy is if its source code is available freely to view. Without this, you are only able trust the developers word regarding what data is collected and how it is used. Futhermore, open source ROMs often have the advatage of being more stable and feature rich than closed source alternatives as more people are working on debugging, updating, and adding to it.</p>
+
+            <h2>Examples</h2>
+            <p>The following example ROMs are in my opinion the most stable and privacy respecting alternatives to using stock Android.</p>
+
+            <div class="device_container">
+                <div class="device">
+                    <h4>LineageOS</h4>
+                    <p>You have likely noticed LineageOS being mentioned multiple times in this guide, and thats for good reason. It was initially forked from the CyanogenMod and is based on AOSP. This ROM is regarded by many to be the most stable and secure privacy focused ROM, with daily updates and wide official device support. Because of this, it has been forked into many other popular ROMs such as <a href="https://replicant.us/">Replicant</a> (a fully FOSS fork of LineageOS), and <a href="https://e.foundation/">/e/</a> (a fork with microG implemented by default). In addition, it includes additional privacy features includig Privacy guard that provides the user the ability to control the permissions given to apps individually and review how permissions are being used.</p>
+                    <div class="plus">
+                        <p>Stable and up to date</p>
+                        <p>Large number of supported devices</p>
+                        <p><a href="https://github.com/LineageOS">Open source</a></p>
+                        <p>Additional privacy features</p>
+                        <p>Google services not included</p>
+                    </div>
+
+                    <div class="minus">
+                        <p>Google Play Services alternative not provided by default</p>
+                    </div>
+                </div>
+
+                <div class="device">
+                    <h4>LineageOS for microG</h4>
+                    <p>As the name may imply, LineageOS for microG is a fork of LineageOS with the microG installed by default to replace functionality that would ususally be implemented by Google Play Services. The repository is maintained by the creators or microG and includes signature spoofing, making it easier to get microG working than the official LineageOS build. This fork supports almost all devices with offical LineageOS support and is also updated regularly (weekly).</p>
+                    <div class="plus">
+                        <p>Stable and up to date</p>
+                        <p>Large number of supported devices</p>
+                        <p><a href="https://github.com/LineageOS">Open source</a></p>
+                        <p>Additional privacy features</p>
+                        <p>Google services not included</p>
+                        <p>microG preinstalled with signature spoofing</p>
+                    </div>
+
+                    <div class="minus">
+                        <p>Slighly less frequent updates than the official build</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+	    
+        <div class="buttons_container">
+            <div class="button">
+                <h4><a href="./finding-a-device.html"><</a></h4>
+            </div>
+
+            <div class="button">
+                <h4><a href="./index.html">Back</a></h4>
+            </div>
+
+            <div class="button">
+                <h4><a href="./google-services-and-alternatives.html">></a></h4>
+            </div>
+        </div>
+		
+        <div class="footer">
+            <p>Joe Standring | 2020</p>
+            <p class="links"><b><a href="https://joestandring.com">Website</a> | <a href="https://github.com/joestandring/">GitHub</a> | <a href="mailto:joe@joestandring.com?Subject=Hello%20again">Email</a></b></p>
+        </div>
+	</body>
+</html>
