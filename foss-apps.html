@@ -16,20 +16,128 @@
 		
 		<div class="content">
             <p>The following are some reccomended alternatives to common Android apps. It is adviseable to use as many FOSS (free open source software) apps as possible so that you can trust any privacy claims made by the developer.</p>
-            <h2>TOR</h2>
-            <h2>VPN</h2>
-            <h2>Web browser</h2>
+            <h2 id="app_stores">App stores</h2>
             <div class="device_container">
                 <div class="device">
-                    <h4>Bromite</h4>
-                    <p><a href="https://www.bromite.org/">Bromite</a> is a browser based on Chromim which patches out Google features that do not respect privacy (similar to <a href="https://github.com/Eloston/ungoogled-chromium">ungoogled-chromium</a>). It also features additional privacy improvements such as a built in ad/tracker blocker using filters from multiple sources, DNS-over-HTTPS support, and other privacy patches. As it is built on Chromium, it performs better than Firefox-based browsers in the majority of situations and does not require patches to be implemented manually via user.js, add-ons, or about:config. Because of this however, it can be harder to customise various settings and features manually compared to Firefox.</p>
+                    <h4>F-Droid</h4>
+                    <p><a href="https://www.f-droid.org/">F-Droid</a> is an app repository that contains only FOSS apps. In addition to the default repositories, it can be extended by adding more app repositories. Almost all of the apps talked about here are available on F-droid.</p>
+                    <div class="plus">
+                        <p>Large number of FOSS apps</p>
+                        <p>Lists "anti-features" clearly</p>
+                        <p>Extensible</p>
+                        <p>Auto-update apps and repos</p>
+                        <p>Categorises apps</p>
+                    </div>
+                    <div class="minus">
+                        <p>Does not host any proprietary apps</p>
+                        <p>Searching isnt as good as proprietary app stores (e.g. Google Play)</p>
+                    </div>
                 </div>
                 <div class="device">
-                    <h4>Firefox</h4>
+                    <h4>Aurora Store</h4>
+                    <p>If you still need to download proprietary apps/those not currently on F-droid, <a href="https://auroraoss.com/">Aurora</a> allows you to download any app found on the Google Play store without the need for a Google account. It was initially forked from <a href="https://f-droid.org/en/packages/com.github.yeriomin.yalpstore/">Yalp Store</a> but is more regularly updated and features a more intuitive UI. This is a better option than just downloading an APK as Aurora automatically updates apps and means you don't need to manually download apps from potentially malicious websites.</p>
+                    <div class="plus">
+                        <p>Can download all apps found on the Google Play Store</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 id="tor">Tor</h2>
+            <div class="device_container">
+                <div class="device">
+                    <h4>Orbot</h4>
+                    <p><a href="https://www.torproject.org/">Tor</a> is a system designed to make users anonymous when using the internet. Using the Tor network has many advantages over using a VPN service. Firstly, Tor is decentralised - meaning that you are not placing your trust in a company who are capable of viewing your internet activity and keeping logs. Using a VPN provider gives you the same level of privacy as simply sending your data dorectly to your ISP; the only difference being that it is sent to another company (who may or may not be more trustworthy). Additionally, Tor sends your tragffic through multiple user hosted nodes/relays in a network of thousands. More information on how the Tor service works can be found <a href="https://write.privacytools.io/my-thoughts-on-security/slicing-onions-part-1-myth-busting-tor">here</a>.</p>
+                </div>
+            </div>
+
+            <h2 id="vpn">VPN</h2>
+            <p>This section will not cover VPN providers, but instead apps that support importing VPN configurations. For a good list of VPN providers, I reccomend seeing the listed VPN providers at <a href="https://www.privacytools.io/providers/vpn/">privacytools.io</a>.
+            <div class="device_container">
+                <div class="device">
+                    <h4>OpenVPN</h4>
+                    <p>The majority of VPN providers use the <a href="https://openvpn.net/">OpenVPN</a> protocol so it would make sense to use their app as opposed to downloading a seperate, possibly closed source, app from the provider. The app lets you import multiple VPN profiles (provided by the VPN provider) and has nice additional features such as cconntcting to a specified VPN when the device is started, pausing the VPN connection when the screen is off, and reconnecting to a VPN automatically if connection is lost.</p>
+                    <div class="plus">
+                        <p>Wider range of VPN providers</p>
+                        <p>Privacy focused</p>
+                        <p>Does not save IP addresses to server by default</p>
+                        <p>Dynamic IP address assignment</p>
+                    </div>
+                    <div class="minus">
+                        <p>Outdated encryption protocols</p>
+                        <p>Increased resource use</p>
+                        <p>Slower network speeds</p>
+                    </div>
+                </div>
+
+                <div class="device">
+                    <h4>WireGuard</h4>
+                    <p>Similarly to the OpenVPN app, <a href="https://www.wireguard.com/">WireGuard</a> is a protocol that is used by multiple VPN providers and therefore such providers are supported by this app. While WireGuard is not nearly as widespread as OpenVPN, it features a number of improvements including improved performance (network speeds, resource usage, faster handshake) and updated encryption using more up to date protocols than OpenVPN. Despite the increased performance and security, WireGuard has various privacy issues such as storing IP addresses on the VPN server without expiring and not assigning dynamic IP addresses. These issues, however, are often circumvented by features provided by VPN services like <a href="https://mullvad.net/en/help/why-wireguard/">Mullivad</a>.
+                    <div class="plus">
+                        <p>Up to date, improved encryption protocols</p>
+                        <p>Decreased resource use (longer battery life)</p>
+                        <p>Faster network speeds</p>
+                    </div>
+                    <div class="minus">
+                        <p>Fewer supported VPN providers</p>
+                        <p>Security/performance focus, not privacy</p>
+                        <p>Saves connected IPs to server by default</p>
+                        <p>No dynamic IP address assignment</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 id="web_browsers">Web browser</h2>
+            <div class="device_container">
+                <div class="device">
+                    <h4>Tor Browser</h4>
+                    <p>Replacing the Orfox browser, <a href="https://blog.torproject.org/new-alpha-release-tor-browser-android">Tor</a> browser for android integrates Tor protocols and allows you to navigate the web entirely through the Tor network. The app itself is based on Firefox and currently has implemented the majority of changes and features present in the desktop release. While this is the best browser to secure your privacy on Android, it may be unsuitable in cases where you may not want to use the Tor network. Therefore, it is reccomended you also install another non-Tor privacy respecting browser.</p>
+                    <div class="plus">
+                        <p>Uses the Tor network</p>
+                        <p>Additional privacy features</p>
+                        <p>Preconfigured advanced privacy settings</p>
+                    </div>
+                    <div class="minus">
+                        <p>Slower network speeds due to Tor connection</p>
+                        <p>No way to use without Tor</p>
+                        <p>Not as optimised as Chromium-based brosers</p>
+                    </div>
+                </div>
+
+                <div class="device">
+                    <h4>Bromite</h4>
+                    <p><a href="https://www.bromite.org/">Bromite</a> is a browser based on Chromim which patches out Google features that do not respect privacy (similar to <a href="https://github.com/Eloston/ungoogled-chromium">ungoogled-chromium</a>). It also features additional privacy improvements such as a built in ad/tracker blocker using filters from multiple sources, DNS-over-HTTPS support, and other privacy patches. As it is built on Chromium, it performs better than Firefox-based browsers in the majority of situations and does not require patches to be implemented manually via user.js, add-ons, or about:config tweaks. Because of this however, it can be harder to customise various settings and features manually compared to Firefox.</p>
+                    <div class="plus">
+                        <p>Chromium-based, more optimised for Android</p>
+                        <p>Faster connection speeds than Tor Browser</p>
+                        <p>Additional privacy features compared to default Chrome/Chromium</p>
+                        <p>Removed much of the Google tracking in Chromium</p>
+                        <p>Additional privacy tweaks</p>
+                    </div>
+                    <div class="minus">
+                        <p>No Tor support</p>
+                        <p>No extension support</p>
+                        <p>Less privacy/security settings than Firefox</p>
+                    </div>
+                </div>
+
+                <div class="device">
+                    <h4>Firefox/Firefox Focus</h4>
+                    <p>Similarly to their desktop releases, Mozilla advertises <a href="https://www.mozilla.org/en-US/firefox/mobile/">Firefox Mobile</a> as privacy focused browser. Compared to Google Chrome and other Chromium-based browsers, Firefox collects less user data and almost no identifiable information depending on the settings used. It also has more privacy features and settings built in that can be configured via a custom user.js file or by tweaking about:config. As well as a default release, Mozilla also has a browser with many privacy configurations already made, and additional privacy features called <a href="https://support.mozilla.org/en-US/kb/focus">Firefox Focus</a>. For additional steps to make Firefox a more privacy respecting, secure browser see <a href="./additional-tips.html">additional tips</a>.
+                    <div class="plus">
+                        <p>Faster connection speeds than Tor Browser</p>
+                        <p>More privacy and security features than Chrome/Chromium</p>
+                        <p>No Google tracking</p>
+                        <p>Granular and extensive privacy/security tweaks via about:config and user.js</p>
+                        <p>Extension support</p>
+                    </div>
+                    <div class="minus">
+                        <p>No Tor support</p>
+                        <p>Less optimised for android than Chromium-based browsers</p>
+                        <p>Required a lot of configuration</p>
+                    </div>
                 </div>
             </div>
             <h2>Email</h2>
-            <h2>App stores</h2>
             <h2>Simple apps</h2>
             <h2>Password manager</h2>
             <h2>Messaging</h2>
