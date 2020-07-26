@@ -26,11 +26,10 @@
                         <p>Lists "anti-features" clearly</p>
                         <p>Extensible</p>
                         <p>Auto-update apps and repos</p>
-                        <p>Categorises apps</p>
                     </div>
                     <div class="minus">
                         <p>Does not host any proprietary apps</p>
-                        <p>Searching isnt as good as proprietary app stores (e.g. Google Play)</p>
+                        <p>Searching isnt as good as proprietary app stores (e.g. Google Play/Aurora)</p>
                     </div>
                 </div>
                 <div class="device">
@@ -38,6 +37,13 @@
                     <p>If you still need to download proprietary apps/those not currently on F-droid, <a href="https://auroraoss.com/">Aurora</a> allows you to download any app found on the Google Play store without the need for a Google account. It was initially forked from <a href="https://f-droid.org/en/packages/com.github.yeriomin.yalpstore/">Yalp Store</a> but is more regularly updated and features a more intuitive UI. This is a better option than just downloading an APK as Aurora automatically updates apps and means you don't need to manually download apps from potentially malicious websites.</p>
                     <div class="plus">
                         <p>Can download all apps found on the Google Play Store</p>
+                        <p>Can "sign in" without a Google account</p>
+                        <p>Lists trackers in apps</p>
+                        <p>Auto-uptates installed apps</p>
+                    </div>
+                    <div class="minus">
+                        <p>"Anonymous" account sometimes doesnt work</p>
+                        <p>Does not provide as much privacy information as F-Droid</p>
                     </div>
                 </div>
             </div>
@@ -51,14 +57,13 @@
             </div>
 
             <h2 id="vpn">VPN</h2>
-            <p>This section will not cover VPN providers, but instead apps that support importing VPN configurations. For a good list of VPN providers, I reccomend seeing the listed VPN providers at <a href="https://www.privacytools.io/providers/vpn/">privacytools.io</a>.
+            <p>This section will not cover VPN providers, but instead apps that support importing VPN configurations. For a good list of VPN providers, I reccomend seeing the listed VPN providers at <a href="https://www.privacytools.io/providers/vpn/">privacytools.io</a>. While these apps can support multiple providers, many first party VPN apps may support more privacy features and may be more suitable.
             <div class="device_container">
                 <div class="device">
                     <h4>OpenVPN</h4>
                     <p>The majority of VPN providers use the <a href="https://openvpn.net/">OpenVPN</a> protocol so it would make sense to use their app as opposed to downloading a seperate, possibly closed source, app from the provider. The app lets you import multiple VPN profiles (provided by the VPN provider) and has nice additional features such as cconntcting to a specified VPN when the device is started, pausing the VPN connection when the screen is off, and reconnecting to a VPN automatically if connection is lost.</p>
                     <div class="plus">
                         <p>Wider range of VPN providers</p>
-                        <p>Privacy focused</p>
                         <p>Does not save IP addresses to server by default</p>
                         <p>Dynamic IP address assignment</p>
                     </div>
@@ -71,7 +76,7 @@
 
                 <div class="device">
                     <h4>WireGuard</h4>
-                    <p>Similarly to the OpenVPN app, <a href="https://www.wireguard.com/">WireGuard</a> is a protocol that is used by multiple VPN providers and therefore such providers are supported by this app. While WireGuard is not nearly as widespread as OpenVPN, it features a number of improvements including improved performance (network speeds, resource usage, faster handshake) and updated encryption using more up to date protocols than OpenVPN. Despite the increased performance and security, WireGuard has various privacy issues such as storing IP addresses on the VPN server without expiring and not assigning dynamic IP addresses. These issues, however, are often circumvented by features provided by VPN services like <a href="https://mullvad.net/en/help/why-wireguard/">Mullivad</a>.
+                    <p>Similarly to the OpenVPN app, <a href="https://www.wireguard.com/">WireGuard</a> is a protocol that is used by multiple VPN providers and therefore such providers are supported by this app. While WireGuard is not nearly as widespread as OpenVPN, it features a number of improvements including improved performance (network speeds, resource usage, faster handshake) and updated encryption using more up to date protocols than OpenVPN. Despite the increased performance and security, WireGuard has various minor privacy issues such as storing IP addresses in the VPN server's RAM for the duration of the connection and not assigning dynamic IP addresses. These issues, however, are often circumvented by features provided by VPN services like <a href="https://mullvad.net/en/help/why-wireguard/">Mullivad</a>.
                     <div class="plus">
                         <p>Up to date, improved encryption protocols</p>
                         <p>Decreased resource use (longer battery life)</p>
@@ -79,9 +84,8 @@
                     </div>
                     <div class="minus">
                         <p>Fewer supported VPN providers</p>
-                        <p>Security/performance focus, not privacy</p>
-                        <p>Saves connected IPs to server by default</p>
-                        <p>No dynamic IP address assignment</p>
+                        <p>Saves connected IPs to server by default ("fixed" by various VPN providers)</p>
+                        <p>No dynamic IP address assignment ("fixed" by various VPN providers)</p>
                     </div>
                 </div>
             </div>
@@ -137,18 +141,87 @@
                     </div>
                 </div>
             </div>
+
+            <h2>Firewall</h2>
+            <div class="device_container">
+                <p>An effective way to prevent privacy invasive apps from constantly calling home is to use a firewall. While this can improve privacy, it can also require a lot of set up and maintainence to only block traffic you need/want to block.</p>
+                <div class="device">
+                    <h4>NetGuard</h4>
+                    <p><a href="https://www.netguard.me/">NetGuard</a> is an open source firewall that allows apps/addresses to be blocked individually without the need to root your device. As well as simply allowing and blocking certain apps, other features are included such as only allowing network traffic when the screen is on, notifying the user when an application accesses the internet, and blocking advertisements and trackers using a hosts file. While the free version is feature rich, the paid version includes additional features such as logging all outgoing traffic, blocking individual applications within an application, and showing a network speed graph. As this app does not use root, it uses Android's in-build VPN functionality to monitor and block traffic. This unfortunatley means that you cannot use this app alongside a VPN connection.</p>
+                    <div class="plus">
+                        <p>Regularly updated</p>
+                        <p>Doesn't require rooting device</p>
+                        <p>Ad/tracker blocking functionality using hosts file</p>
+                        <p>Additonal blocking rules (screen on/off, roaming)</p>
+                        <p>Notify when apps access internet</p>
+                        <p>Block individual addresses per application (PAID)</p>
+                        <p>View outgoing traffic logs (PAID)</p>
+                    </div>
+                    <div class="minus">
+                        <p>Some features locked behind paywall</p>
+                        <p>Cannot use along with a VPN</p>
+                        <p>Can lose connection more often than a root option</p>
+                        <p>Cannot import/export rules</p>
+                    </div>
+                </div>
+                
+                <div class="device">
+                    <h4>AFWall+</h4>
+                    <p>Another open source option is <a href="https://github.com/ukanth/afwall">AFWall+</a>. Similarly to NetGuard, it allows for individual apps and addresses to be blocked and provides notifications when a specificed app accesses the internet. Unlike NetGuard, however, it does not provide functionality for blocking advertisements via a hosts file and is missing a few additional features available in NetGuard. As this app requires root, it uses iptables as opposed to Android's VPN functionality meaning it can be used along with a VPN. Additionally, it means that it will be applied to all apps and will be less likely to stop working as it works on a lower level.</p>
+                    <div class="plus">
+                        <p>Block individual addresses per application for free</p>
+                        <p>View outgoing traffic logs for free</p>
+                        <p>Some features locked behind paywall</p>
+                        <p>Can use along with a VPN</p>
+                        <p>Works at a lower level, less likely to lose connection</p>
+                        <p>Import/export rules</p> 
+                    </div>
+                    <div class="minus">
+                        <p>Less regularly updated</p>
+                        <p>Requires rooting device</p>
+                        <p>No ad/tracker blocking functionality</p>
+                        <p>Less blocking rules than NetGuard</p>
+                    </div>
+                </div>
+            </div>
+
             <h2>Email</h2>
-            <h2>Simple apps</h2>
+            
+
+            <h2>Maps</h2>
             <h2>Password manager</h2>
             <h2>Messaging</h2>
             <h2>YouTube</h2>
-            <h2>Firewall</h2>
             <h2>Ad-blockers</h2>
+            <h2>Common/preinstalled app replacements</h2>
+            <div class="device_container">
+                <div class="device">
+                    <h4>Simple Mobile Tools</h4>
+                    <p>While many of the preinstalled AOSP apps included with most ROMs are not necessarily a privacy risk, they are closed source. The <a href="https://www.simplemobiletools.com/">Simple Mobile Tools</a> contains open source replacements for most commonplace apps. The aim of these apps is to be free of unecessary permissions and to be simple yet customisable. Apps part of this collection include:</p>
+                    <ul>
+                        <li><a href="https://www.simplemobiletools.com/gallery/">Simple Gallery</a></li>
+                        <li><a href="https://www.simplemobiletools.com/calendar/">Simple Calendar</a></li>
+                        <li><a href="https://www.simplemobiletools.com/contacts/">Simple Contacts</a></li>
+                        <li><a href="https://www.simplemobiletools.com/notes/">Simple Notes</a></li>
+                        <li><a href="https://www.simplemobiletools.com/filemanager/">Simple File Manager</a></li>
+                        <li>Simple Draw</li>
+                        <li>Simple Music Player</li> 
+                        <li>Simple Flashlight</li> 
+                        <li>Simple SMS Messenger</li> 
+                        <li>Simple Voice Recorder</li> 
+                        <li>Simple Dialer</li> 
+                        <li>Simple Calculator</li> 
+                        <li>Simple Clock</li> 
+                        <li>Simple App Launcher</li> 
+                        <li>Simple Camera</li> 
+                    </ul>
+                </div>
+            </div>
         </div>
 	    
         <div class="buttons_container">
             <div class="button">
-                <h4><a href="./roms.html"><</a></h4>
+                <h4><a href="./google-services-and-alternatives.html"><</a></h4>
             </div>
 
             <div class="button">
@@ -156,7 +229,7 @@
             </div>
 
             <div class="button">
-                <h4><a href="./foss-apps.html">></a></h4>
+                <h4><a href="./additional-tips.html">></a></h4>
             </div>
         </div>
 		
