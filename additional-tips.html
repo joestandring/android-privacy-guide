@@ -19,6 +19,42 @@
             <p>Other than TOR Broswer, Firefox is likely the most privacy respecting browser available for android if you take the time to modify and configure it. Firstly, you can configure settings and features by either manually changing settings in about:config (see <a href="https://www.privacytools.io/browsers/#about_config">Privacy Tool's reccomendations</a>). Another, quicker way to do this is by using a user.js file that firefox will read on boot and change the settings accordingly. To do this, you will need root access along with a file manager capable of accessing the /data directory where Firefox's files are stored. Possibly the most comprehensive user.js configuration is <a href="https://github.com/ghacksuserjs/ghacks-user.js">ghacks user.js</a>. Keep in mind, however, that it is made for desktop first so may require some configuration for a smooth mobile experience.</p>
             <p>To add additional privacy and security features to firefox, you can use browser extensions. Here are some reccomendations:</p>
 
+            <div class="device_container">
+                <div class="device">
+                    <h4>uBlock Origin</h4>
+                    <p><a href="https://github.com/gorhill/uBlock">uBlock Origin</a> is an extension that allows you to block various, potentially privacy intrusive, elements such as advertisements and JavaScript scripts. The default filters are very comprehensive, however it can be expanded with custom filters, whitelists, and by using the element picker to block elements visually.</p>
+                </div>
+                <div class="device">
+                    <h4>Decentraleyes</h4>
+                    <p>Many modern websites load resources from content delivery networks (CDNs) such as Google, Cloudflare, or Amazon. In order to avoid communicating with these thrid parties to deliver content, <a href="https://decentraleyes.org/">Decentraleyes</a> blocks this content and instead provides the files included with the extension. This means that you do not have to interact with potentially privacy-intrusive services, and content is delivered faster as it is stored locally.</p>
+                </div>
+                <div class="device">
+                    <h4>Privacy Badger</h4>
+                    <p>While this extension can be made mostly redundant by a configured uBlock Origin setup due to overlap between blocked trackers, <a href="https://privacybadger.org/">Privacy Badger</a> is able to discover trackers while you use it instead of using a preset list. This means that the longer you use the extension, the more new trackers you will be able to block that other blockers like uBlock Origin may miss.</p>
+                </div>
+                <p/>
+                <div class="device">
+                    <h4>uMatrix</h4>
+                    <p><a href="https://github.com/gorhill/uMatrix">uMatrix</a> is an advanced blocker that is able to block any content or remote connection including (but not limited to) cookies, CSS resources (such as web fonts and stylesheets, images, and scripts/requests made by scripts (XHR). You can also decide what to block per domain granularly. While this is generally more effective than other blockers (such as uBlock Origin or Privacy Badger), it will break the majortiy of websites you use it with and therefore requires a lot more configuration for it to be useable. This is for advanced users only.</p>
+                </div>
+                <div class="device">
+                    <h4>Cookie AutoDelete</h4>
+                    <p>Most people expect your interaction with a website to end when you leave or close the tab. Unfortunatley thrid party cookies make this unlikely and can be used to track you anywhere you are on the web. <a href="https://github.com/Cookie-AutoDelete/Cookie-AutoDelete">Cookie AutoDelete</a> automatically deletes all cookies when a tab is closed for specified demains and/or on a preset schedule. It also supports a whitelist/greylist so that specified sites can still utilize cookies if necessary.</p>
+                </div>
+                <div class="device">
+                    <h4>ClearURLs</h4>
+                    <p>Many websites use code in their URLs to track your online activity. <a href="https://gitlab.com/KevinRoebert/ClearUrls">ClearURLs</a> uses WebExtensions to remove these elements from the URL. The page will still be displayed exatly the same. Additionally, it also works on links, meaning you will always be directed to the URL without tracking code.</p>
+                </div>
+            </div>
+
+            <h2>Additional Resources</h2>
+            <p>If you would like to add a resource here, please submit a PR on this sites <a href="github.com/joestandring/android-privacy-guide">GitHub repo</a>.</p>
+            <ul>
+                <li><a href="https://www.privacytools.io/">PrivacyTools</a>: Comprehensive guide to alternatives to common services/software. Desktop focused but has some Android privacy information. Much can be applied on android.</li>
+                <li><a href="https://www.eff.org/">EFF</a>: A nonprofit focused on defending digital privacy and free speech. Their website has various useful <a href="https://ssd.eff.org/">guides</a> as well as news and releases about current digital privacy issues. They also hold various <a href="https://www.eff.org/events/list?type=event">events</a> and have developed many <a href="https://www.eff.org/pages/tools">tools</a> listed in this guide.</li>
+                <li><a href="https://www.fsf.org/">Free Software Foundation</a>: A nonprofit organization that promotes free open source software (FOSS) and defending software user rights. They are most well known for their work on the <a href="https://www.gnu.org/">GNU</a> project and GNU/Linux. They also have many provacy oriented guides such as <a href="https://emailselfdefense.fsf.org/en/">Email Self-Defense</a>.</li>
+                <li><a href="https://tosdr.org/">Terms of Service; Didn't Read</a>: Helps users understand the (intentionally) convoluted terms of service for many online websites and services and rates them depending on how much they respect user privacy.</li>
+            </ul>
         <div class="buttons_container">
             <div class="button">
                 <h4><a href="./foss-apps.html"><</a></h4>

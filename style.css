@@ -135,6 +135,14 @@ a
     vertical-align: top;
 }
 
+.device img
+{
+    width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: darkgrey;
+}
+
 .plus p
 {
     background-color: #3D9970;
@@ -165,7 +173,12 @@ a
     padding: 10px;
 }
 
-.alert img
+a i 
+{
+    color: #3D9970;
+}
+
+.alert i
 {
     display: inline-block;
     width: 5%;

@@ -7,21 +7,24 @@
 		<meta name="description" content="A simple, concise, and easy to implement guide to privacy on Android">
 		<link rel="stylesheet" href="./style.css">
 		<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,700" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
 	</head>
 	
 	<body>
-		<div class="banner">
+        <div class="banner">
 			<h1>FOSS apps</h1>
 		</div>
 		
 		<div class="content">
-            <p>The following are some reccomended alternatives to common Android apps. It is adviseable to use as many FOSS (free open source software) apps as possible so that you can trust any privacy claims made by the developer.</p>
+            <p>The following are some reccomended alternatives to common Android apps. It is adviseable to use FOSS (free open source software) apps where possible as you can validate any privacy claims made by the developer.</p>
 
             <h2 id="app_stores">App stores</h2>
             <div class="device_container">
                 <div class="device">
                     <h4>F-Droid</h4>
-                    <p><a href="https://www.f-droid.org/">F-Droid</a> is an app repository that contains only FOSS apps. In addition to the default repositories, it can be extended by adding more app repositories. Almost all of the apps talked about here are available on F-droid.</p>
+                    <img src="./assets/img/icons/f-droid.png"></img>
+                    <p><a href="https://www.f-droid.org/"><i class="fa fa-globe fa-2x"></i></a> <a href="https://f-droid.org/en/packages/org.fdroid.fdroid/"><i class="fa fa-f-droid fa-2x"></i></a> <a href="https://github.com/f-droid"><i class="fa fa-github fa-2x"></i></a></p>
+                    <p>F-Droid is an app repository that contains only FOSS apps. In addition to the default selection, it can be extended by adding more app repositories. Almost all of the apps talked about on this page are available on F-droid.</p>
                     <div class="plus">
                         <p>Large number of FOSS apps</p>
                         <p>Lists "anti-features" clearly</p>
@@ -35,7 +38,9 @@
                 </div>
                 <div class="device">
                     <h4>Aurora Store</h4>
-                    <p>If you still need to download proprietary apps/those not currently on F-droid, <a href="https://auroraoss.com/">Aurora</a> allows you to download any app found on the Google Play store without the need for a Google account. It was initially forked from <a href="https://f-droid.org/en/packages/com.github.yeriomin.yalpstore/">Yalp Store</a> but is more regularly updated and features a more intuitive UI. This is a better option than just downloading an APK as Aurora automatically updates apps and means you don't need to manually download apps from potentially malicious websites.</p>
+                    <img src="./assets/img/icons/aurora-store.png"></img>
+                    <p><a href="https://auroraoss.com/"><i class="fa fa-globe fa-2x"></i></a> <a href="https://f-droid.org/en/packages/com.aurora.store/"><i class="fa fa-f-droid fa-2x"></i></a> <a href="https://gitlab.com/AuroraOSS/AuroraStore"><i class="fa fa-gitlab fa-2x"></i></a></p>
+                    <p>If you still need to download proprietary apps/those not currently on F-droid, Aurora allows you to download any app found on the Google Play store without the need for a Google account. It was initially forked from <a href="https://f-droid.org/en/packages/com.github.yeriomin.yalpstore/">Yalp Store</a> but is more regularly updated and features a more intuitive UI. This is a better option than just downloading an APK as Aurora automatically updates apps and means you don't need to manually download apps from potentially malicious websites.</p>
                     <div class="plus">
                         <p>Can download all apps found on the Google Play Store</p>
                         <p>Can "sign in" without a Google account</p>
@@ -53,16 +58,20 @@
             <div class="device_container">
                 <div class="device">
                     <h4>Orbot</h4>
-                    <p><a href="https://www.torproject.org/">Tor</a> is a system designed to make users anonymous when using the internet. Using the Tor network has many advantages over using a VPN service. Firstly, Tor is decentralised - meaning that you are not placing your trust in a company who are capable of viewing your internet activity and keeping logs. Using a VPN provider gives you the same level of privacy as simply sending your data dorectly to your ISP; the only difference being that it is sent to another company (who may or may not be more trustworthy). Additionally, Tor sends your tragffic through multiple user hosted nodes/relays in a network of thousands. More information on how the Tor service works can be found <a href="https://write.privacytools.io/my-thoughts-on-security/slicing-onions-part-1-myth-busting-tor">here</a>.</p>
+                    <img src="./assets/img/icons/orbot.png"></img>
+                    <p><a href="https://guardianproject.info/apps/orbot/"><i class="fa fa-globe fa-2x"></i></a> <a href="https://f-droid.org/packages/org.torproject.android/"><i class="fa fa-f-droid fa-2x"></i></a> <a href="https://play.google.com/store/apps/details?id=org.torproject.android&hl=en"><i class="fa fa-google fa-2x"></i></a> <a href="https://github.com/guardianproject/orbot"><i class="fa fa-github fa-2x"></i></a></p>
+                    <p>Tor is a system designed to make users anonymous when using the internet. Using the Tor network has many advantages over using a VPN service. Firstly, Tor is decentralized - meaning that you are not placing your trust in a company that is capable of viewing your internet activity and keeping logs. Using a VPN provider gives you the same level of privacy as simply sending your data directly to your ISP; the only difference being that it is sent to another company (who may or may not be more trustworthy). Additionally, Tor sends your traffic through multiple user-hosted nodes/relays in a network of thousands. More information on how the Tor service works can be found <a href="https://write.privacytools.io/my-thoughts-on-security/slicing-onions-part-1-myth-busting-tor">here</a>.</p>
                 </div>
             </div>
 
             <h2 id="vpn">VPN</h2>
-            <p>This section will not cover VPN providers, but instead apps that support importing VPN configurations. For a good list of VPN providers, I reccomend seeing the listed VPN providers at <a href="https://www.privacytools.io/providers/vpn/">privacytools.io</a>. While these apps can support multiple providers, many first party VPN apps may support more privacy features and may be more suitable.
+            <p>This section will not cover VPN providers, but instead apps that support importing VPN configurations. For a good list of VPN providers, I recommend seeing the listed VPN providers at <a href="https://www.privacytools.io/providers/vpn/">privacytools.io</a>. While these apps can support multiple providers, many first-party VPN apps may support more privacy features and may be more suitable.</p>
             <div class="device_container">
                 <div class="device">
-                    <h4>OpenVPN</h4>
-                    <p>The majority of VPN providers use the <a href="https://openvpn.net/">OpenVPN</a> protocol so it would make sense to use their app as opposed to downloading a seperate, possibly closed source, app from the provider. The app lets you import multiple VPN profiles (provided by the VPN provider) and has nice additional features such as cconntcting to a specified VPN when the device is started, pausing the VPN connection when the screen is off, and reconnecting to a VPN automatically if connection is lost.</p>
+                    <h4>OpenVPN for Android</h4>
+                    <img src="./assets/img/icons/openvpn.png"></img>
+                    <p><a href="https://openvpn.net/"><i class="fa fa-globe fa-2x"></i></a> <a href="https://f-droid.org/en/packages/de.blinkt.openvpn/"><i class="fa fa-f-droid fa-2x"></i></a> <a href="https://play.google.com/store/apps/details?id=de.blinkt.openvpn"><i class="fa fa-google fa-2x"></i></a> <a href="https://github.com/schwabe/ics-openvpn"><i class="fa fa-github fa-2x"></i></a></p>
+                    <p>The majority of VPN providers use the OpenVPN protocol so it would make sense to use their app as opposed to downloading a separate (possibly closed source) app from the provider. OpenVPN for Android lets you import multiple VPN profiles and has useful additional features such as connecting to a specified VPN when the device is started, pausing the VPN connection when the screen is off, and reconnecting to a VPN automatically if connection is lost.</p>
                     <div class="plus">
                         <p>Wider range of VPN providers</p>
                         <p>Does not save IP addresses to server by default</p>
@@ -77,7 +86,9 @@
 
                 <div class="device">
                     <h4>WireGuard</h4>
-                    <p>Similarly to the OpenVPN app, <a href="https://www.wireguard.com/">WireGuard</a> is a protocol that is used by multiple VPN providers and therefore such providers are supported by this app. While WireGuard is not nearly as widespread as OpenVPN, it features a number of improvements including improved performance (network speeds, resource usage, faster handshake) and updated encryption using more up to date protocols than OpenVPN. Despite the increased performance and security, WireGuard has various minor privacy issues such as storing IP addresses in the VPN server's RAM for the duration of the connection and not assigning dynamic IP addresses. These issues, however, are often circumvented by features provided by VPN services like <a href="https://mullvad.net/en/help/why-wireguard/">Mullivad</a>.
+                    <img src="./assets/img/icons/wireguard.png"></img>
+                    <p><a href="https://www.wireguard.com/"><i class="fa fa-globe fa-2x"></i></a> <a href="https://f-droid.org/en/packages/com.wireguard.android/"><i class="fa fa-f-droid fa-2x"></i></a> <a href="https://play.google.com/store/apps/details?id=com.wireguard.android"><i class="fa fa-google fa-2x"></i></a> <a href="https://git.zx2c4.com/wireguard-android"><i class="fa fa-git-square fa-2x"></i></a></p>
+                    <p>Similarly to the OpenVPN app, WireGuard s a protocol that is used by multiple VPN providers, and therefore such providers are supported by this app. While WireGuard is not nearly as widespread as OpenVPN, it features several improvements including improved performance (network speeds, resource usage, faster handshake) and updated encryption using more up to date protocols than OpenVPN. Despite the increased performance and security, WireGuard has various minor privacy issues such as storing IP addresses in the VPN server's RAM for the duration of the connection and not assigning dynamic IP addresses. These issues, however, are often circumvented by features provided by VPN services like <a href="https://mullvad.net/en/help/why-wireguard/">Mullvad</a>.
                     <div class="plus">
                         <p>Up to date, improved encryption protocols</p>
                         <p>Decreased resource use (longer battery life)</p>
@@ -95,7 +106,9 @@
             <div class="device_container">
                 <div class="device">
                     <h4>Tor Browser</h4>
-                    <p>Replacing the Orfox browser, <a href="https://blog.torproject.org/new-alpha-release-tor-browser-android">Tor</a> browser for android integrates Tor protocols and allows you to navigate the web entirely through the Tor network. The app itself is based on Firefox and currently has implemented the majority of changes and features present in the desktop release. While this is the best browser to secure your privacy on Android, it may be unsuitable in cases where you may not want to use the Tor network. Therefore, it is reccomended you also install another non-Tor privacy respecting browser.</p>
+                    <img src="./assets/img/icons/tor-browser.png"></img>
+                    <p><a href="https://2019.www.torproject.org/docs/android.html.en"><i class="fa fa-globe fa-2x"></i></a> <a href="https://guardianproject.info/fdroid/"><i class="fa fa-f-droid fa-2x"></i></a> <a href="https://play.google.com/store/apps/details?id=org.torproject.torbrowser"><i class="fa fa-google fa-2x"></i></a> <a href="https://github.com/guardianproject/tor-browser"><i class="fa fa-github fa-2x"></i></a></p>
+                    <p>Replacing the Orfox browser, the Tor browser for android integrates Tor protocols and allows you to navigate the web entirely through the Tor network. The app itself is based on Firefox and currently has implemented the majority of changes and features present in the desktop release. While this is the best browser to secure your privacy on Android, it may be unsuitable in cases where you may not want to use the Tor network. Therefore, it is recommended you also install another non-Tor privacy-respecting browser.</p>
                     <div class="plus">
                         <p>Uses the Tor network</p>
                         <p>Additional privacy features</p>
@@ -110,7 +123,9 @@
 
                 <div class="device">
                     <h4>Bromite</h4>
-                    <p><a href="https://www.bromite.org/">Bromite</a> is a browser based on Chromim which patches out Google features that do not respect privacy (similar to <a href="https://github.com/Eloston/ungoogled-chromium">ungoogled-chromium</a>). It also features additional privacy improvements such as a built in ad/tracker blocker using filters from multiple sources, DNS-over-HTTPS support, and other privacy patches. As it is built on Chromium, it performs better than Firefox-based browsers in the majority of situations and does not require patches to be implemented manually via user.js, add-ons, or about:config tweaks. Because of this however, it can be harder to customise various settings and features manually compared to Firefox.</p>
+                    <img src="./assets/img/icons/bromite.png">
+                    <p><a href="https://www.bromite.org/"><i class="fa fa-globe fa-2x"></i></a> <a href="https://www.bromite.org/fdroid"><i class="fa fa-f-droid fa-2x"></i></a> <a href="https://github.com/bromite/bromite"><i class="fa fa-github fa-2x"></i></a></p>
+                    <p>Bromite is a browser based on Chromium which patches out Google features that do not respect privacy (similar to <a href="https://github.com/Eloston/ungoogled-chromium">ungoogled-chromium</a>). It also features additional privacy improvements such as a built-in ad/tracker blocker using filters from multiple sources, DNS-over-HTTPS support, and other privacy patches. As it is built on Chromium, it performs better than Firefox-based browsers in the majority of situations and does not require patches to be implemented manually via user.js, add-ons, or about:config tweaks. Because of this, however, it can be harder to customize various settings and features manually compared to Firefox.</p>
                     <div class="plus">
                         <p>Chromium-based, more optimised for Android</p>
                         <p>Faster connection speeds than Tor Browser</p>
@@ -126,8 +141,10 @@
                 </div>
 
                 <div class="device">
-                    <h4>Firefox/Firefox Focus</h4>
-                    <p>Similarly to their desktop releases, Mozilla advertises <a href="https://www.mozilla.org/en-US/firefox/mobile/">Firefox Mobile</a> as privacy focused browser. Compared to Google Chrome and other Chromium-based browsers, Firefox collects less user data and almost no identifiable information depending on the settings used. It also has more privacy features and settings built in that can be configured via a custom user.js file or by tweaking about:config. As well as a default release, Mozilla also has a browser with many privacy configurations already made, and additional privacy features called <a href="https://support.mozilla.org/en-US/kb/focus">Firefox Focus</a>. For additional steps to make Firefox a more privacy respecting, secure browser see <a href="./additional-tips.html">additional tips</a>.
+                    <h4>Firefox/Fennec/Firefox Focus</h4>
+                    <img src="./assets/img/icons/firefox.png">
+                    <p><a href="https://www.mozilla.org/en-US/firefox/mobile/"><i class="fa fa-globe fa-2x"></i></a> <a href="https://f-droid.org/en/packages/org.mozilla.fennec_fdroid/"><i class="fa fa-f-droid fa-2x"></i></a> <a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox"><i class="fa fa-google fa-2x"></i></a> <a href="https://hg.mozilla.org/mozilla-central/"><i class="fa fa-git-square fa-2x"></i></a></p>
+                    <p>Similarly to their desktop releases, Mozilla advertises Firefox Mobile as a privacy-focused browser. Compared to Google Chrome and other Chromium-based browsers, Firefox collects less user data and almost no identifiable information depending on the settings used. It also has more privacy features and settings built in that can be configured via a custom user.js file or by tweaking about:config. As well as a default release, Mozilla also has a browser with many privacy configurations already made, and additional privacy features called <a href="https://support.mozilla.org/en-US/kb/focus">Firefox Focus</a>. For a fork of Firefox without proprietary code, <a href="https://f-droid.org/en/packages/org.mozilla.fennec_fdroid/">Fennec</a> is available on F-Droid. For additional steps to make Firefox a more privacy-respecting, secure browser see <a href="./additional-tips.html">additional tips</a>.
                     <div class="plus">
                         <p>Faster connection speeds than Tor Browser</p>
                         <p>More privacy and security features than Chrome/Chromium</p>
@@ -145,10 +162,12 @@
 
             <h2>Firewall</h2>
             <div class="device_container">
-                <p>An effective way to prevent privacy invasive apps from constantly calling home is to use a firewall. While this can improve privacy, it can also require a lot of set up and maintainence to only block traffic you need/want to block.</p>
+                <p>An effective way to prevent privacy-invasive apps from constantly connecting to servers you do not want them to is to use a firewall. While this can improve privacy, it can also require a lot of set up and maintenance to block only the desired connections.</p>
                 <div class="device">
                     <h4>NetGuard</h4>
-                    <p><a href="https://www.netguard.me/">NetGuard</a> is an open source firewall that allows apps/addresses to be blocked individually without the need to root your device. As well as simply allowing and blocking certain apps, other features are included such as only allowing network traffic when the screen is on, notifying the user when an application accesses the internet, and blocking advertisements and trackers using a hosts file. While the free version is feature rich, the paid version includes additional features such as logging all outgoing traffic, blocking individual applications within an application, and showing a network speed graph. As this app does not use root, it uses Android's in-build VPN functionality to monitor and block traffic. This unfortunatley means that you cannot use this app alongside a VPN connection.</p>
+                    <img src="./assets/img/icons/netguard.png"></img>
+                    <p><a href="https://netguard.me/"><i class="fa fa-globe fa-2x"></i></a> <a href="https://f-droid.org/en/packages/eu.faircode.netguard/"><i class="fa fa-f-droid fa-2x"></i></a> <a href="https://play.google.com/store/apps/details?id=eu.faircode.netguard"><i class="fa fa-google fa-2x"></i></a> <a href="https://github.com/M66B/NetGuard"><i class="fa fa-github fa-2x"></i></a></p>
+                    <p>NetGuard is an open-source firewall that allows apps/addresses to be blocked individually without the need to root your device. As well as allowing and blocking certain apps, other features are included such as only allowing network traffic when the screen is on, notifying the user when an application accesses the internet and blocking advertisements and trackers using a hosts file. While the free version is feature-rich, the paid version includes additional features such as logging all outgoing traffic, blocking individual connections within an application and showing a network speed graph. As this app does not use root, it uses Android's in-build VPN functionality to monitor and block traffic. This unfortunately means that you cannot use this app alongside a VPN connection.</p>
                     <div class="plus">
                         <p>Regularly updated</p>
                         <p>Doesn't require rooting device</p>
@@ -168,7 +187,9 @@
                 
                 <div class="device">
                     <h4>AFWall+</h4>
-                    <p>Another open source option is <a href="https://github.com/ukanth/afwall">AFWall+</a>. Similarly to NetGuard, it allows for individual apps and addresses to be blocked and provides notifications when a specificed app accesses the internet. Unlike NetGuard, however, it does not provide functionality for blocking advertisements via a hosts file and is missing a few additional features available in NetGuard. As this app requires root, it uses iptables as opposed to Android's VPN functionality meaning it can be used along with a VPN. Additionally, it means that it will be applied to all apps and will be less likely to stop working as it works on a lower level.</p>
+                    <img src="./assets/img/icons/afwall.png"></img>
+                    <p><a href="https://github.com/ukanth/afwall/wiki"><i class="fa fa-globe fa-2x"></i></a> <a href="https://f-droid.org/en/packages/dev.ukanth.ufirewall/"><i class="fa fa-f-droid fa-2x"></i></a> <a href="https://play.google.com/store/apps/details?id=dev.ukanth.ufirewall"><i class="fa fa-google fa-2x"></i></a> <a href="https://github.com/ukanth/afwall"><i class="fa fa-github fa-2x"></i></a></p>
+                    <p>Another open-source option is AFWall+. Similarly to NetGuard, it allows for individual apps and addresses to be blocked and provides notifications when a specified app accesses the internet. Unlike NetGuard, however, it does not provide functionality for blocking advertisements via a hosts file and is missing a few additional features available in NetGuard. As this app requires root, it uses iptables as opposed to Android's VPN functionality meaning it can be used along with a VPN. Additionally, it means that it will be applied to all apps and will be more reliable as it works on a lower level.</p>
                     <div class="plus">
                         <p>Block individual addresses per application for free</p>
                         <p>View outgoing traffic logs for free</p>
@@ -190,7 +211,9 @@
             <div class="device_container">
                 <div class="device">
                     <h4>KeePassDX</h4>
-                    <p>The best way to ensure your passwords are kept private and secure is by storing them locally in an encrypted file. <a href="https://www.keepassdx.com/">KeePassDX</a> is an open source password manager that uses encrypted database files (.kdbx, .kdb) to import and export passwords. This means that you can share your password protected database to other devices to sync your passwords and reimport it, for example by using Syncthing or a cloud storage service. Similar to many propritary and non self-hosted password managers, KeePassDX supports features like automatically adding login information for new apps/websites, auto-filling login fields, and locking the app with a pin/fingerprint.</p>
+                    <img src="./assets/img/icons/keepassdx.png"></img>
+                    <p><a href="https://www.keepassdx.com/"><i class="fa fa-globe fa-2x"></i></a> <a href="https://f-droid.org/en/packages/com.kunzisoft.keepass.libre/"><i class="fa fa-f-droid fa-2x"></i></a> <a href="https://play.google.com/store/apps/details?id=com.kunzisoft.keepass.free"><i class="fa fa-google fa-2x"></i></a> <a href="https://github.com/Kunzisoft/KeePassDX"><i class="fa fa-github fa-2x"></i></a></p>
+                    <p>The best way to ensure your passwords are kept private and secure is by storing them locally in an encrypted file. KeePassDX is an open-source password manager that uses encrypted database files (.kdbx, .kdb) to import and export passwords. This means that you can share your password-protected database to other devices to sync your passwords and reimport it, for example by using Syncthing or a cloud storage service. Similar to many proprietary and non-self-hosted password managers, KeePassDX supports features like automatically adding login information for new apps/websites, auto-filling login fields, and locking the app with a pin/fingerprint.</p>
                     <div class="plus">
                         <p>Passwords not stored on someone else's server</p>
                         <p>Multiple encryption algorythms (AES, Twofish, ChaCha20, Argon2)</p>
@@ -206,6 +229,8 @@
 
                 <div class="device">
                     <h4>Bitwarden</h4>
+                    <img src="./assets/img/icons/bitwarden.png"></img>
+                    <p><a href=""><i class="fa fa-globe fa-2x"></i></a> <a href="https://f-droid.org/en/packages/com.kunzisoft.keepass.libre/"><i class="fa fa-f-droid fa-2x"></i></a> <a href="https://play.google.com/store/apps/details?id=com.kunzisoft.keepass.free"><i class="fa fa-google fa-2x"></i></a> <a href="https://github.com/Kunzisoft/KeePassDX"><i class="fa fa-github fa-2x"></i></a></p>
                     <p>While managing passwords locally using encrypted databases negates the risk of them being misused, it can be tedious to set up importing and exporting databases and there is a higher risk of losing them accidentally (drive failiure, accidental deletion, corruption). While most cloud-hosted password managers are closed source, and therefore cannot be trusted entirely with your data - <a href="https://bitwarden.com/">Bitwarden</a> is an open source password manager that uses their own cloud service to store passwords. While the software itself is open source, however, they still have access to your passwords on their server. This means that you need to trust their security measures will keep your password safe. To ensure this, Bitwarden is audited regularly, with <a href="https://bitwarden.com/blog/post/third-party-security-audit/">reports</a> freely available on their website. Finally, Bitwarden performs all encrpytion on the client's device using AES 256 bit encryption before it is uploaded to their servers.</p>
                     <div class="plus">
                         <p>Multiple encryption algorythms (AES 256bit, PBKDF2) performed before passwords uploaded</p>

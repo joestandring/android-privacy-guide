@@ -7,6 +7,7 @@
 		<meta name="description" content="A simple, concise, and easy to implement guide to privacy on Android">
 		<link rel="stylesheet" href="./style.css">
 		<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,700" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
 	</head>
 	
 	<body>
@@ -33,16 +34,16 @@
             <h2>Alternatives</h2>
             <p>For the majority of users, some form of implementation of/alternative to Google Play Services is necessary for the majority of tasks they would perform on an Android device. There are two main alternatives to using the proprietary implementation of Google Play Services that aim to restore the majority (if not all of) the functionality to a ROM that does not include it.</p>
 
-            <h4>Open GApps</h4>
-            <p><a href="https://opengapps.org/">Open GApps</a> is an open source reimplementation of various Google apps and services, that allow for you install them on ROMs not including them by default. <b>Open GApps does not provide an open source, privacy respecting alternative to Google Play Services</b> but instead simply provides a way for them to be installed. If you use Open GApps you have the same level of privacy on your device as if you were using preinstalled Google Play Services.</p>
+            <h4>Open GApps <a href="https://opengapps.org/"><i class="fa fa-globe"></i></a> <a href="https://github.com/opengapps/opengapps"><i class="fa fa-github"></i></a></h4>
+            <p>Open GApps is an open source reimplementation of various Google apps and services, that allow for you install them on ROMs not including them by default. <b>Open GApps does not provide an open source, privacy respecting alternative to Google Play Services</b> but instead simply provides a way for them to be installed. If you use Open GApps you have the same level of privacy on your device as if you were using preinstalled Google Play Services.</p>
 
-            <h4>microG</h4>
-            <p>An actual alternative to using Google Play Services is the <a href="https://microg.org/">microG Project</a>. This provides an open source re-implementation of of the majority of the services and APIs provided with Google Play Services that do not send identifiable information to Google servers. This includes:</p>
+            <h4>microG <a href="https://https://microg.org/"><i class="fa fa-globe"></i></a> <a href="https://github.com/microg"><i class="fa fa-github"></i></a></h4>
+            <p>An actual alternative to using Google Play Services is the microG Project. This provides an open source re-implementation of of the majority of the services and APIs provided with Google Play Services that do not send identifiable information to Google servers. This includes:</p>
             <ul>
-                <li><b>GmsCore</b> to provide the core functionality needed to run apps requireing Google Play services</li>
-                <li><b>GsfProxy</b> to allow apps to use Google Cloud Messaging and send push notifications</li>
-                <li><b>UnifiedNlp</b> to allow for location data to be collected via Wi-Fi and cellular geolocation to be passed to apps that use Google's location provider</li>
-                <li><b>mapsv1</b> to replace Google Maps API</li>
+                <li><b>GmsCore</b>: Provides the core functionality needed to run apps requireing Google Play services</li>
+                <li><b>GsfProxy</b>: Allows apps to use Google Cloud Messaging and send push notifications</li>
+                <li><b>UnifiedNlp</b>: Allows for location data to be collected via Wi-Fi and cellular geolocation to be passed to apps that use Google's location provider</li>
+                <li><b>mapsv1</b>: Replaces Google Maps API</li>
             </ul>
             <p>By using microG, no identifiable information is sent to google. While a majority of applications work using microG as a replacement, some proprietary apps may still not work. To install microG, you must have a ROM that allows for <a href="https://forum.xda-developers.com/android/general/index-list-custom-roms-offering-t3557047">signature spoofing</a> or use a rom with microG already implemented such a LineageOS for microG.</p>
         </div>
