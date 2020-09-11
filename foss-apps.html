@@ -18,6 +18,20 @@
 		<div class="content">
             <p>The following are some reccomended alternatives to common Android apps. It is adviseable to use FOSS (free open source software) apps where possible as you can validate any privacy claims made by the developer.</p>
 
+			<h2>Contents</h2>
+			<ol>
+				<li><a href="#app_stores">App Stores</a></li>
+				<li><a href="#tor">Tor</a></li>
+				<li><a href="#vpn">VPN</a></li>
+				<li><a href="#web_browsers">Web Browsers</a></li>
+				<li><a href="#firewalls">Firewalls</a></li>
+				<li><a href="#password_managers">Password Managers</a></li>
+				<li><a href="#storage_sync">Storage/sync</a></li>
+				<li><a href="#messaging_communication">Messaging/communication</a></li>
+				<li><a href="#common">Common/preinstalled app replacements</a></li>
+				<li><a href="#other">Other recomendations</a></li>
+			</ol>
+
             <h2 id="app_stores">App stores</h2>
             <div class="device_container">
                 <div class="device">
@@ -160,7 +174,7 @@
                 </div>
             </div>
 
-            <h2>Firewall</h2>
+            <h2 id="firewalls">Firewalls</h2>
             <div class="device_container">
                 <p>An effective way to prevent privacy-invasive apps from constantly connecting to servers you do not want them to is to use a firewall. While this can improve privacy, it can also require a lot of set up and maintenance to block only the desired connections.</p>
                 <div class="device">
@@ -207,7 +221,7 @@
                 </div>
             </div>
 
-            <h2>Password manager</h2>
+            <h2 id="password_managers">Password managers</h2>
             <div class="device_container">
                 <div class="device">
                     <h4>KeePassDX</h4>
@@ -230,7 +244,7 @@
                 <div class="device">
                     <h4>Bitwarden</h4>
                     <img src="./assets/img/icons/bitwarden.png"></img>
-                    <p><a href=""><i class="fa fa-globe fa-2x"></i></a> <a href="https://f-droid.org/en/packages/com.kunzisoft.keepass.libre/"><i class="fa fa-f-droid fa-2x"></i></a> <a href="https://play.google.com/store/apps/details?id=com.kunzisoft.keepass.free"><i class="fa fa-google fa-2x"></i></a> <a href="https://github.com/Kunzisoft/KeePassDX"><i class="fa fa-github fa-2x"></i></a></p>
+                    <p><a href="https://bitwarden.com/"><i class="fa fa-globe fa-2x"></i></a> <a href="https://play.google.com/store/apps/details?id=com.x8bit.bitwarden"><i class="fa fa-google fa-2x"></i></a> <a href="https://github.com/bitwarden"><i class="fa fa-github fa-2x"></i></a></p>
                     <p>While managing passwords locally using encrypted databases negates the risk of them being misused, it can be tedious to set up importing and exporting databases and there is a higher risk of losing them accidentally (drive failiure, accidental deletion, corruption). While most cloud-hosted password managers are closed source, and therefore cannot be trusted entirely with your data - <a href="https://bitwarden.com/">Bitwarden</a> is an open source password manager that uses their own cloud service to store passwords. While the software itself is open source, however, they still have access to your passwords on their server. This means that you need to trust their security measures will keep your password safe. To ensure this, Bitwarden is audited regularly, with <a href="https://bitwarden.com/blog/post/third-party-security-audit/">reports</a> freely available on their website. Finally, Bitwarden performs all encrpytion on the client's device using AES 256 bit encryption before it is uploaded to their servers.</p>
                     <div class="plus">
                         <p>Multiple encryption algorythms (AES 256bit, PBKDF2) performed before passwords uploaded</p>
@@ -248,11 +262,13 @@
                 </div>
             </div>
 
-            <h2>Storage/sync</h2>
+            <h2 id="storage_sync">Storage/sync</h2>
             <div class="device_container">
                 <div class="device">
                     <h4>Nextcloud</h4>
-                    <p>One of the most common ways to share and access files between devices is to use a cloud service. Often times, these are closed-source and require you to use external servers for an intuitive user experience. <a href="https://nextcloud.com/">Nextcloud</a> is a platform that provides an intuitive interface and features that allow for files to be uploaded, and downloaded from either a user hosted, or external server. This means that all data is owned and controlled by the user, or a data provider they have selected so they can be confident their data is not being misused. Nextcloud also has some nice features that make operating with data stored using it easier such as multiple accounts, calendar/contacts synchronisation, and automatically uploading/downloading files on a user defined schedule.</p>
+					<img src="./assets/img/icons/nextcloud.png"></img>
+					<p><a href="https://nextcloud.com/"><i class="fa fa-globe fa-2x"></i></a> <a href="https://f-droid.org/en/packages/com.nextcloud.client/"><i class="fa fa-f-droid fa-2x"></i></a> <a href="https://play.google.com/store/apps/details?id=com.nextcloud.client"><i class="fa fa-google fa-2x"></i></a> <a href="https://github.com/nextcloud"><i class="fa fa-github fa-2x"></i></a></p>
+                    <p>One of the most common ways to share and access files between devices is to use a cloud service. Often, these are closed-source and require you to use external servers for an intuitive user experience. Nextcloud is a platform that provides an intuitive interface and features that allow for files to be uploaded and downloaded from either a user-hosted or external server. This means that all data is owned and controlled by the user, or a data provider they have selected so they can be confident their data is not being misused. Nextcloud also has some nice features that make operating with data stored using it easier such as multiple accounts, calendar/contacts synchronization, and automatically uploading/downloading files on a user-defined schedule.</p>
                     <div class="plus">
                         <p>Can be self-hosted. You are in control of your data</p>
                         <p>Ability to be used with an external data provider</p>
@@ -269,7 +285,9 @@
                 </div>
                 <div class="device">
                     <h4>Syncthing</h4>
-                    <p>An alternative to storing files on a single server is to automatically sync them between multiple devices using a service like <a href="https://syncthing.net/">Syncthing</a>. This negates the need for a central server that needs to be maintained/paid for and means that data is stored on multiple devices, so if one breaks you do not lose your data. This works by making rules for individual files, such as only sending, only recieving, or both - reducing the risk of confilcts/overrides.</p>
+					<img src="./assets/img/icons/syncthing.png"></img>
+					<p><a href="https://syncthing.net/"><i class="fa fa-globe fa-2x"></i></a> <a href="https://f-droid.org/en/packages/com.nutomic.syncthingandroid/"><i class="fa fa-f-droid fa-2x"></i></a> <a href="https://play.google.com/store/apps/details?id=com.nutomic.syncthingandroid"><i class="fa fa-google fa-2x"></i></a> <a href="https://github.com/syncthing/syncthing"><i class="fa fa-github fa-2x"></i></a></p>
+                    <p>An alternative to storing files on a single server is to automatically sync them between multiple devices using a service Syncthing. This negates the need for a central server that needs to be maintained/paid for and means that data is stored on multiple devices, so if one breaks you do not lose your data. This works by making rules for individual files, such as only sending, only receiving, or both - reducing the risk of conflicts/overrides.</p>
                     <div class="plus">
                         <p>No interaction with external servers who can see your data</p>
                         <p>Automatically sync files between devices using rules</p>
@@ -286,11 +304,13 @@
             </div>
 
 
-            <h2>Messaging/communication</h2>
+            <h2 id="messaging_communication">Messaging/communication</h2>
             <div class="device_container">
                 <div class="device">
                     <h4>Signal</h4>
-                    <p>Signal is a centralised messaging platform. This means that it uses its own proprietary servers to host conversations that are end-to-end enrypted. It supports common IM features such as VoIP, group chats, and video calls. This option is very easy to set up, and by default is private and secure (although your data is kept on an external server it is encrypted and the server is regulalry <a href="https://community.signalusers.org/t/wiki-overview-of-third-party-security-audits/13243">audited</a> by external parties).</p>
+					<img src="./assets/img/icons/signal.png"></img>
+					<p><a href="https://signal.org/en/"><i class="fa fa-globe fa-2x"></i></a> <a href="https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms"><i class="fa fa-google fa-2x"></i></a> <a href="https://github.com/signalapp"><i class="fa fa-github fa-2x"></i></a></p>
+                    <p>Signal is a centralized messaging platform. This means that it uses its own proprietary servers to host conversations that are end-to-end encrypted. It supports common IM features such as VoIP, group chats, and video calls. This option is very easy to set up, and by default is private and secure (although your data is kept on an external server it is encrypted and the server is regularly <a href="https://community.signalusers.org/t/wiki-overview-of-third-party-security-audits/13243">audited</a> by external parties).</p>
                     <div class="plus">
                         <p>Simple to set up and use</p>
                         <p>Do not have to rely on potentially unsecure/privacy invasive user-hosted servers</p>
@@ -307,7 +327,9 @@
 
                 <div class="device">
                     <h4>Element</h4>
-                    <p>Previously known as Riot.im, <a href="https://element.io/">Element</a> is a federated messaging service that uses multiple indipendantly hosted servers as opposed to a single centralised server. This means that server owners have greater control over the data they host and can apply their own encryption protocols. Futhermore, using multiple user hosted servers means that there is less risk of your data being compromised as there is not only one target. Element also provides IM features such as VoIP, group chats, and video calls as well as a bridge to other messaging services (such as WhatsApp, Slack, IRC, and others).
+					<img src="./assets/img/icons/element.png"></img>
+					<p><a href="https://element.io/"><i class="fa fa-globe fa-2x"></i></a> <a href="https://f-droid.org/en/packages/im.vector.app/"><i class="fa fa-f-droid fa-2x"></i></a> <a href="https://play.google.com/store/apps/details?id=im.vector.app"><i class="fa fa-google fa-2x"></i></a> <a href="https://github.com/vector-im/element-android/"><i class="fa fa-github fa-2x"></i></a></p>
+                    <p>Previously known as Riot.im, Element is a federated messaging service that uses multiple independently hosted servers as opposed to a single centralized server. This means that server owners have greater control over the data they host and can apply their own encryption protocols. Furthermore, using multiple user-hosted servers means that there is less risk of your data being compromised as there is not only one target. Element also provides IM features such as VoIP, group chats, and video calls as well as a bridge to other messaging services (such as WhatsApp, Slack, IRC, and others).
                     <div class="plus">
                         <p>Does not require a phone number</p>
                         <p>Can choose what servers to use/host your own</p>
@@ -322,11 +344,13 @@
                 </div>
             </div>
 
-            <h2>Common/preinstalled app replacements</h2>
+            <h2 id="common">Common/preinstalled app replacements</h2>
             <div class="device_container">
                 <div class="device">
                     <h4>Simple Mobile Tools</h4>
-                    <p>The <a href="https://www.simplemobiletools.com/">Simple Mobile Tools</a> contains open source replacements for most commonplace apps. The aim of these apps is to be free of unecessary permissions and to be simple yet customisable. Apps part of this collection include:</p>
+					<img src="./assets/img/icons/simple.png"></img>
+					<p><a href="https://www.simplemobiletools.com/"><i class="fa fa-globe fa-2x"></i></a> <a href="https://f-droid.org/en/packages/com.simplemobiletools.thankyou/"><i class="fa fa-f-droid fa-2x"></i></a> <a href="https://play.google.com/store/apps/details?id=com.simplemobiletools.thankyou"><i class="fa fa-google fa-2x"></i></a> <a href="https://github.com/SimpleMobileTools"><i class="fa fa-github fa-2x"></i></a></p>
+                    <p>Simple Mobile Tools contains open-source replacements for most commonplace apps. These apps aim to be free of unnecessary permissions and to be simple yet customizable. Apps part of this collection include:</p>
                     <ul>
                         <li><a href="https://www.simplemobiletools.com/gallery/">Simple Gallery</a></li>
                         <li><a href="https://www.simplemobiletools.com/calendar/">Simple Calendar</a></li>
@@ -347,21 +371,27 @@
                 </div>
             </div>
 
-            <h2>Other reccomendations</h2>
+            <h2 id="other">Other recomendations</h2>
             <div class="device_container">
                 <div class="device">
                     <h4>NewPipe (YouTube/SoundCloud)</h4>
-                    <p>As opposed to using the official YouTube app, <a href="https://newpipe.schabi.org/">NewPipe</a> can be used to search and watch videos hosted on YouTube without a Google account. Futhermore, it allows you to subscribe to channels and import/export subscriptions as well as play videos in the background and download them. As well as YouTube, NewPipe doubles as an app to listen to music via SoundCloud.</p>
+					<img src="./assets/img/icons/newpipe.png"></img>
+					<p><a href="https://newpipe.schabi.org/"><i class="fa fa-globe fa-2x"></i></a> <a href="https://f-droid.org/en/packages/org.schabi.newpipe/"><i class="fa fa-f-droid fa-2x"></i></a> <a href="https://github.com/TeamNewPipe/NewPipe"><i class="fa fa-github fa-2x"></i></a></p>
+                    <p>As opposed to using the official YouTube app, NewPipe can be used to search and watch videos hosted on YouTube without a Google account. Furthermore, it allows you to subscribe to channels and import/export subscriptions as well as play videos in the background and download them. As well as YouTube, NewPipe doubles as an app to listen to music via SoundCloud.</p>
                 </div>
 
                 <div class="device">
                     <h4>OsmAnd+ (OSM client)</h4>
-                    <p><a href="https://osmand.net/">OsmAnd+</a> is a navigation and map app using data from OpenStreetMap and Wikipedia. It allows you to download maps and use them offline, and can also act as a sat-nav using voice guidance, route calculation, traffic warnings, and automatic re-routing. As OpenStreetMap is updated constantly, maps will more than likely be up to date and accurate.</p>
+					<img src="./assets/img/icons/osm.png"></img>
+					<p><a href="https://osmand.net/"><i class="fa fa-globe fa-2x"></i></a> <a href="https://f-droid.org/en/packages/net.osmand.plus/"><i class="fa fa-f-droid fa-2x"></i></a> <a href="https://play.google.com/store/apps/details?id=net.osmand"><i class="fa fa-google fa-2x"></i></a> <a href="https://github.com/osmandapp/OsmAnd"><i class="fa fa-github fa-2x"></i></a></p>
+                    <p>OsmAnd+ is a navigation and map app using data from OpenStreetMap and Wikipedia. It allows you to download maps and use them offline, and can also act as a sat-nav using voice guidance, route calculation, traffic warnings, and automatic re-routing. As OpenStreetMap is updated constantly, maps will more than likely be up to date and accurate.</p>
                 </div>
 
                 <div class="device">
                     <h4>K-9 Mail (Email client)</h4>
-                    <p>Instead of using a proprietary, possibly closed-source email client; <a href="https://k9mail.app/">K-9 Mail</a> allows you to send and receivce emails with any service supporting POP3 or IMAP. Additionally, it supports encryption emails via OpenPGP with the <a href="https://www.openkeychain.org/">OpenKeyChain</a> app. 
+					<img src="./assets/img/icons/k9.png"></img>
+					<p><a href="https://k9mail.app/"><i class="fa fa-globe fa-2x"></i></a> <a href="https://f-droid.org/en/packages/com.fsck.k9/"><i class="fa fa-f-droid fa-2x"></i></a> <a href="https://play.google.com/store/apps/details?id=com.fsck.k9"><i class="fa fa-google fa-2x"></i></a> <a href="https://github.com/k9mail/k-9"><i class="fa fa-github fa-2x"></i></a></p>
+                    <p>Instead of using a proprietary, possibly closed-source email client; K-9 Mail allows you to send and receive emails with any service supporting POP3 or IMAP. Additionally, it supports encryption emails via OpenPGP with the <a href="https://www.openkeychain.org/">OpenKeyChain</a> app. 
                 </div>
             </div>
 
@@ -385,5 +415,7 @@
             <p>Joe Standring | 2020</p>
             <p class="links"><b><a href="https://joestandring.com">Website</a> | <a href="https://github.com/joestandring/">GitHub</a> | <a href="mailto:joe@joestandring.com?Subject=Hello%20again">Email</a></b></p>
         </div>
+		
+		<a href="https://ko-fi.com/joestandring"><img class="donate" src="./assets/img/ko-fi.png"></a>
 	</body>
 </html>
